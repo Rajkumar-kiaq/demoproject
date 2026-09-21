@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  my-web-app:
+    build: .
+    image: custom-nginx-app:latest
+    container_name: live_web_container
+    ports:
+      - "8080:80"
+    restart: always
